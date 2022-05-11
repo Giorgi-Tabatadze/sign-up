@@ -1,0 +1,32 @@
+*{
+  font-family: 'Playfair Display', serif;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+  display: flex;
+  flex-flow: row wrap;
+  --width: 35vw;
+}
+
+.background{
+  background-image: url(./assets/background.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.content-container {
+  width: 65%;
+  height: 100%;
+  background-color: rgb(249, 249, 249);
+  border-left: 1.5px solid gray;
+  position: fixed;
+  left: 35%;
+}
