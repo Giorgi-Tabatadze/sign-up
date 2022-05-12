@@ -5,11 +5,16 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
- 
+  <script src="./javascript.js" defer></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="background"></div>
+  <div class="background">
+    <div class="logo-container">
+      <img id="logo" src="./logo.png" alt="odin logo">
+      <div id="logo-text">ODIN</div>
+    </div>
+  </div>
   <div class="content-container">
     <h2>This is not a real online service! You know you need something
       like this in your life to help you realize your deepest dreams.
@@ -42,19 +47,18 @@
           <div class="pairs">
             <div class="input">
               <label for="password">PASSWORD *</label>
-              <input type="password" name="user-password" id="password" required>
+              <input type="password" name="user-password" id="password" minlength="6" required>
             </div>
             <div class="input">
               <label for="repeat-password">REPEAT PASSWORD *</label>
-              <input type="password" name="user-repeat-password" id="repeat-password" required>
+              <input type="password" name="user-repeat-password" id="repeat-password" minlength="6" required>
             </div>
           </div>
         </div>
       </div>
       <div class="outside">
         <button>Create Account</button>
-        <p>Already have an account?</p>
-        <a href="">Log in</a>
+        <p>Already have an account? <a class="login" href="">Log in</a></p>
       </div>
     </form>
   </div>
