@@ -5,39 +5,58 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="background">
+<div class="background"></div>
   <div class="content-container">
-    <h1>This is not a real online service! You know you need something
+    <h2>This is not a real online service! You know you need something
       like this in your life to help you realize your deepest dreams.
-      Sign up now to get started.</h1>
-    <h1>You know you want to.</h1>
+      Sign up now to get started.</h2>
+    <h2>You know you want to.</h2>
     <form action="">
       <div class="form-container">
         <h3>Lets Do this!</h3>
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" name="user-first-name" id="first-name">
-        <label for="last-name">LAST NAME</label>
-        <input type="text" name="user-last-name" id="last-name">
-        <label for="email">EMAIL</label>
-        <input type="email" name="user-email" id="email">
-        <label for="phone-number">PHONE NUMBER</label>
-        <input type="tel" name="user-phone-number" id="phone-number">
-        <label for="password">PASSWORD</label>
-        <input type="password" name="user-password" id="password">
-        <label for="repeat-password">PASSWORD</label>
-        <input type="password" name="user-repeat-password" id="repeat-password">
+        <div class="input-container">
+          <div class="pairs">
+            <div class="input">
+              <label for="first-name">FIRST NAME *</label>
+              <input type="text" name="user-first-name" id="first-name" required>
+            </div>
+            <div class="input">
+              <label for="last-name">LAST NAME *</label>
+              <input type="text" name="user-last-name" id="last-name" required>
+            </div>
+          </div>
+          <div class="pairs">
+            <div class="input">
+              <label for="email">EMAIL *</label>
+              <input type="email" name="user-email" id="email" required>
+            </div>
+            <div class="input">
+              <label for="phone-number">PHONE NUMBER *</label>
+              <input type="tel" name="user-phone-number" id="phone-number" required>
+            </div>
+          </div>
+          <div class="pairs">
+            <div class="input">
+              <label for="password">PASSWORD *</label>
+              <input type="password" name="user-password" id="password" required>
+            </div>
+            <div class="input">
+              <label for="repeat-password">REPEAT PASSWORD *</label>
+              <input type="password" name="user-repeat-password" id="repeat-password" required>
+            </div>
+          </div>
+        </div>
       </div>
-      <button>Create Account</button>
-      <p>Already have an account?</p>
-      <a href="">Log in</a>
+      <div class="outside">
+        <button>Create Account</button>
+        <p>Already have an account?</p>
+        <a href="">Log in</a>
+      </div>
     </form>
   </div>
-</div>
 </body>
 </html>
